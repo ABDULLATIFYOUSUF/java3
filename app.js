@@ -134,7 +134,7 @@
 
 // CHP # 17-20
 
-// var activities = []
+// var activities = [[]]
 
 // var activities = [
 //     [1,2,3],
@@ -160,18 +160,11 @@
 //     document.write(table + " x" + " " + i + " " + " = " + " " + table * i + "<br />")
 // }
 
-// var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
-// document.write(fruits)
-// document.write("<br>")
-// document.write("element at index 0 is" + " " + fruits[0])
-// document.write("<br>")
-// document.write("element at index 1 is" + " " + fruits[1])
-// document.write("<br>")
-// document.write("element at index 2 is" + " " + fruits[2])
-// document.write("<br>")
-// document.write("element at index 3 is" + " " + fruits[3])
-// document.write("<br>")
-// document.write("element at index 4 is" + " " + fruits[4])
+// var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry']
+// for (var i = 0; i < fruits.length; i++) {
+//     document.write("Element at index " + i + " " + fruits[i], "<br >")
+// }
+
 
 // for (var i=1; i<=15; i++)
 // document.write(i + ",")
@@ -179,35 +172,58 @@
 // for (var i=10; i>1; i--)
 // document.write(i + ",")
     
-// for (var i = 0; i<=10; i++)
-// document.write(i*2 + ",")
 
-// for (var i = 1; i < 20; i%3)
-// document.write(i + ",")
+// for (var i = 0; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//         document.write(i + ",")
+//     }
+// }
 
-// for (var i = 0; i<=10; i++)
-// document.write(i*2 + "k" + "," )
 
-// var items = ["cake", "apple pie", "cookie", "chips", "patties"]
-// var order = prompt("Welcome to ABC Bakery. What do you want to order")
-// if(order === items[0]){document.write(order + " " + "is available at index 0 in out bakery")}
-// if(order === items[1]){document.write(order + " " + "is available at index 1 in out bakery")}
-// if(order === items[2]){document.write(order + " " + "is available at index 2 in out bakery")}
-// if(order === items[3]){document.write(order + " " + "is available at index 3 in out bakery")}
-// if(order === items[4]){document.write(order + " " + "is available at index 4 in out bakery")}
-// else{document.write("We are sorry." + order + "is not available in our bakery")}
+// for (var i = 0; i <= 20; i++) {
+//     if (i % 2 !== 0) {
+//         document.write(i + ",")
+//     }
+// }
 
-// var arr = [24, 53, 78, 91, 12]
-// document.write("<h1> Array items: <h1>" + arr)
-// console.log(arr.length)
-// console.log(arr.sort())
-// document.write("<h1>The largest number is:</h1> " + "<h1>" + arr[4])
+// for (var i = 0; i <= 20; i++) {
+//     if (i % 2 == 0) {
+// document.write(i + "k" + "," )}
+//     }
 
-// var arr = [24, 53, 78, 91, 12]
-// document.write("<h1> Array items: <h1>" + arr)
-// console.log(arr.length)
-// console.log(arr.sort())
-// document.write("<h1>The smallest number is:</h1> " + "<h1>" + arr[0])
+// var bakeryItem = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+// var userInput = prompt("Welcome to ABC bakery.What do you want to order Sir/Ma'am")
+// var isMatch = false
+// for (var i = 0; i < bakeryItem.length; i++) {
+//     if (bakeryItem[i] === userInput) {
+//         isMatch = true
+//         document.write(userInput + " " + "is avaiable at index " + i + " in our bakery <br />")
+//         break;
+//     }
+// }
+// if (isMatch === false) {
+//     document.write("We are sorry. " + userInput + " is not available in our bakery")
+// }
+
+
+// var num = [24, 53, 78, 91, 12,]
+// var temp = 0
+// for (var i = 0; i < num.length; i++) {
+//     if (temp < num[i]) {
+//         temp = num[i]
+//     }
+// }
+// document.write("The largest number is ", temp)
+
+
+// var num = [24, 53, 78, 91, 12,]
+// var temp = num[0]
+// for (var i = 0; i < num.length; i++) {
+//     if (temp > num[i]) {
+//         temp = num[i]
+//     }
+// }
+// document.write("The smallest number is ", temp)
 
 
 // var table = (5)
